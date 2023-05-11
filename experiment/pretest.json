@@ -1,0 +1,96 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "Software testing is the process of",
+      "answers": {
+        "a": "Demonstrating that errors are not present ",
+        "b": "Establishing confidence that a program does what it is supposed to do",
+        "c":" Executing a program to show that it is working as per specifications",
+        "d":" Executing a program with the intent of finding errors"       
+       
+      },
+      
+      "correctAnswer": "d",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Alpha testing is done by",
+      "answers": {
+        "a": "Customer   ",
+        "b": "Tester ",
+        "c": "Developer ",
+        "d": "All of the above"
+       
+      },
+      
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Test suite is",
+      "answers": {
+        "a": "Set of test cases   ",
+        "b": "Set of inputs ",
+        "c": "Set of outputs ",
+        "d": "None of the above"
+       
+      },
+      
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Regression testing is primarily related to",
+      "answers": {
+        "a": "Functional testing   ",
+        "b": "Data flow testing ",
+        "c": "Development testing ",
+        "d": " Maintenance testing"
+       
+      },
+      
+      "correctAnswer": "d",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Acceptance testing is done by",
+      "answers": {
+        "a": "Developers   ",
+        "b": "Customers",
+        "c": "Testers ",
+        "d": "All of the above "
+       
+      },
+      
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Testing the software is basically",
+      "answers": {
+        "a": "Verification   ",
+        "b": "Validation",
+        "c": "Verification and Validation  ",
+        "d": "None of the above "
+       
+      },
+      
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Functionality of a software is tested by",
+      "answers": {
+        "a": "White box testing   ",
+        "b": "Black box testing",
+        "c": "Regression testing ",
+        "d": "None of the above"
+       
+      },
+      
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    }
+  ]
+}

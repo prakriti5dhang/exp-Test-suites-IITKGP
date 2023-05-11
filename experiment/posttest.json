@@ -1,0 +1,101 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "Top down approach is used for",
+      "answers": {
+        "a": "Development ",
+        "b": "Identification of faults  ",
+        "c": "Validation ",
+        "d":"Functional testing"
+      },
+      
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Testing of software with actual data and in the actual environment is called",
+      "answers": {
+        "a": "Alpha testing  ",
+        "b": "Beta testing  ",
+        "c": "Regression testing  ",
+        "d": "None of the above  "
+       
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "During the development phase, which of the following testing approach is not adopted",
+      "answers": {
+        "a": "Unit testing",
+        "b": " Bottom up testing",
+        "c": "Integration testing",
+        "d": "Acceptance testing "
+       
+      },
+      "correctAnswer": "d",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Beta testing is carried out by",
+      "answers": {
+        "a": "Users",
+        "b": " Developers",
+        "c": "Testers",
+        "d": "All of the above "
+       
+      },
+      "correctAnswer": "a",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Equivalence class partitioning is related to",
+      "answers": {
+        "a": "Structural testing",
+        "b": " Black box testing",
+        "c": "Mutation testing",
+        "d": "All of the above "
+       
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "During the software validation:",
+      "answers": {
+        "a": "Process is checked ",
+        "b": " Product is checked",
+        "c": "Developers' performance is evaluated",
+        "d": "The customer checks the product  "
+       
+      },
+      "correctAnswer": "d",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Software mistakes during coding are known as:",
+      "answers": {
+        "a": "Failures",
+        "b": " Defects",
+        "c": "Bugs ",
+        "d": "Errors "
+       
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Which is not a functional testing technique ?",
+      "answers": {
+        "a": "Boundary value analysis",
+        "b": "  Decission tabl",
+        "c": "Regression testing",
+        "d": "None of the above"
+       
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    }
+  ]
+}

@@ -1,0 +1,124 @@
+/*Redeveloped
+Lab: Software Engineering
+Exp:Designing Test Suites
+File Name: main.css
+Author: Prakriti Dhang */
+
+html {
+    position: relative;
+    min-height: 100%;
+  }
+
+  body {
+    /* Margin bottom by footer height */
+    margin-bottom: 100px;
+   
+  }
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.table-hover  tr:hover th, .table-hover  tr:hover td {
+    background-color: #c8e4fffa;
+    
+}
+
+
+.table thead{
+    background-color: #1536a1fa;
+    font-weight: bold;
+    text-align: center;
+    color: azure;
+}
+
+
+
+.column-bordered-table td {
+  
+  border-right: 1px solid #1addff;
+}
+
+
+
+div.divscroll {
+   
+    height: 500px;
+    overflow-y: scroll;
+  }
+
+.card{
+    margin-bottom: 10px;
+    
+    
+}
+.card-body{
+   background-color: transparent;
+}
+
+
+
+
+  .list-group-item{
+    margin-bottom: 10px;
+    margin-right: 10px;
+    
+  }
+
+ ul{
+    background-color: tranparent;
+  }
+
+
+  .li:nth-child(1) {
+    transition-delay: 0s;
+  }
+  
+  li:nth-child(2) {
+    transition-delay: 0.5s;
+  }
+  
+  li:nth-child(3) {
+    transition-delay: 1.0s;
+  }
+  
+  li:nth-child(4) {
+    transition-delay: 1.5s;
+  }
+  
+  li:nth-child(5) {
+    transition-delay: 2.0s;
+  }
+  li:nth-child(6) {
+    transition-delay: 2.5s;
+  }
+  li:nth-child(7) {
+    transition-delay: 3.0s;
+  }
+  li:nth-child(8) {
+    transition-delay: 3.5s;
+  }
+  li:nth-child(9) {
+    transition-delay: 4.0s;
+  }
+  
+  
+  
+  ol>li {
+    opacity: 0;
+    transition: opacity .4s;
+  }
+  
+  ol.show>li {
+    opacity: 1;
+  }
+/*footer {
+    position: absolute;
+    bottom: 0;
+    width: 99%;
+    padding-left: 1%;
+  
+   
+  }*/
