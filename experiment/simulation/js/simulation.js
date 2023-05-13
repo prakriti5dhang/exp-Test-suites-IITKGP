@@ -45,7 +45,7 @@ function playsimulation(){
 
 function gonextp2(){
     document.getElementById("step1").style.display="block";
-    document.getElementById("head1").innerHTML="Create a Test Plan";
+    document.getElementById("head1").innerHTML="1. Create a Test Plan";
     document.getElementById("p2").style.display="block";
     document.getElementById("p1").style.display="none";
   
@@ -91,7 +91,7 @@ function gonextp3(){
     document.getElementById("step2").style.display="block";
     document.getElementById("p3").style.display="block";
     document.getElementById("p31").style.display="block";
-    document.getElementById("head1").innerHTML="Create Test Suite";
+    document.getElementById("head1").innerHTML="2. Create Test Suite";
     setTimeout(p32, 10);
 
   
@@ -143,7 +143,7 @@ function gonextp3(){
 
 function gonextp4(){
     document.getElementById("step2").style.display="block";
-    document.getElementById("head1").innerHTML="Create Test Suite";
+    document.getElementById("head1").innerHTML="2. Create Test Suite";
     document.getElementById("p3").style.display="none";
     document.getElementById("p31").style.display="none";
     document.getElementById("p32").style.display="none";
@@ -183,7 +183,7 @@ function l45(){
 
 function gonextp5(){
     document.getElementById("step3").style.display="block";
-    document.getElementById("head1").innerHTML="Test Scripts";
+    document.getElementById("head1").innerHTML="3. Test Scripts";
     document.getElementById("p4").style.display="none";
     document.getElementById("p5").style.display="block";
   
@@ -231,7 +231,7 @@ function l5c(){
 
 function gonextp6(){
     document.getElementById("step4").style.display="block";
-    document.getElementById("head1").innerHTML="Execute all Test Suite";
+    document.getElementById("head1").innerHTML="4. Execute all Test Suite";
     document.getElementById("p5").style.display="none";
     document.getElementById("p6").style.display="block";
   
@@ -262,7 +262,7 @@ function l64(){
 
 function gonextp7(){
     document.getElementById("step5").style.display="block";
-    document.getElementById("head1").innerHTML="Bug Fixing";
+    document.getElementById("head1").innerHTML="5. Bug Fixing";
     document.getElementById("p6").style.display="none";
     document.getElementById("p7").style.display="block";
   
@@ -287,22 +287,22 @@ function l73(){
 function p71(){
     document.getElementById("p71").style.display="block";
     document.getElementById("nextbtn7").disabled=false;
- 
+    setTimeout(replaybtnd, 1500);
 }
 }
 
-function gonextp8(){
+/*function gonextp8(){
     document.getElementById("step6").style.display="block";
     document.getElementById("head1").innerHTML="A Graphical Representation";
     document.getElementById("p7").style.display="none";
     document.getElementById("p8").style.display="block";
-}
+}*/
 
 
 
 
 
-function replaybtn(){
+function replaybtnd(){
     document.getElementById("replaybtn").style.display="block";
     document.getElementById("replaybtn").disabled=false;
 }
