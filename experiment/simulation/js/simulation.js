@@ -286,7 +286,7 @@ function l73(){
 }
 function p71(){
     document.getElementById("p71").style.display="block";
-    document.getElementById("nextbtn7").disabled=false;
+    //document.getElementById("nextbtn7").disabled=false;
     setTimeout(replaybtnd, 1500);
 }
 }
