@@ -109,7 +109,7 @@ function gonextp3(){
     }
     function p33(){
         document.getElementById("p33").style.display="block";
-        document.getElementById("nextbtn3").disabled=false;
+       
         setTimeout(l31, 1500);
     }
 
