@@ -21,6 +21,23 @@ input::-webkit-inner-spin-button {
   margin: 0;
 }
 
+#optd1{
+  border: 0px solid;
+  background-color: transparent;
+}
+#optd2{
+  border: 0px solid;
+  background-color: transparent;
+}
+#optd3{
+  border: 0px solid;
+  background-color: transparent;
+}
+#optd4{
+  border: 0px solid;
+  background-color: transparent;
+}
+
 .table-hover  tr:hover th, .table-hover  tr:hover td {
     background-color: #c8e4fffa;
     
@@ -67,53 +84,14 @@ div.divscroll {
     
   }
 
- ul{
-    background-color: tranparent;
-  }
+ .bluec{
+ color: #026a7c;
+ font-weight: bold ;
+ }
 
-
-  .li:nth-child(1) {
-    transition-delay: 0s;
-  }
-  
-  li:nth-child(2) {
-    transition-delay: 0.5s;
-  }
-  
-  li:nth-child(3) {
-    transition-delay: 1.0s;
-  }
-  
-  li:nth-child(4) {
-    transition-delay: 1.5s;
-  }
-  
-  li:nth-child(5) {
-    transition-delay: 2.0s;
-  }
-  li:nth-child(6) {
-    transition-delay: 2.5s;
-  }
-  li:nth-child(7) {
-    transition-delay: 3.0s;
-  }
-  li:nth-child(8) {
-    transition-delay: 3.5s;
-  }
-  li:nth-child(9) {
-    transition-delay: 4.0s;
-  }
-  
-  
-  
-  ol>li {
-    opacity: 0;
-    transition: opacity .4s;
-  }
-  
-  ol.show>li {
-    opacity: 1;
-  }
+ #t3addbtn{
+  color:#bd04a4
+ }
 /*footer {
     position: absolute;
     bottom: 0;

@@ -7,161 +7,406 @@ Author: Prakriti Dhang
 
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-	
-    <link rel="stylesheet" href="./css/main.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/jointjs/3.6.2/joint.css" />
+
+  <link rel="stylesheet" href="./css/main.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/jointjs/3.6.2/joint.css" />
 
 
 
 
 
-   
+
 </head>
+
 <body>
   <header id="header">
     <div class="container-fluid p-3 ">
       <div class="card">
-      <div class="row">
-        <div class="col-md-2">
-        <img src="images/vlabs-logo.png" class=" rounded img-fluid" alt="vlabs-logo" >
+        <div class="row">
+          <div class="col-md-2">
+            <img src="images/vlabs-logo.png" class=" rounded img-fluid" alt="vlabs-logo">
+          </div>
+          <div class="col-md-8 p-4">
+            <p class="h2 fw-bold text-primary text-center"> Virtual Lab IIT Kharagpur</p>
+          </div>
+          <div class="col-md-2">
+            <img src="images/iitkgp-logo.png" class=" rounded img-fluid" alt="iitkgplogo">
+          </div>
+        </div>
       </div>
-      <div class="col-md-8 p-4">
-        <p class="h2 fw-bold text-primary text-center"> Virtual Lab IIT Kharagpur</p>
-      </div>
-      <div class="col-md-2">
-        <img src="images/iitkgp-logo.png" class=" rounded img-fluid" alt="iitkgplogo" >
-      </div>
-      </div>
-    </div>
     </div>
   </header>
- 
+
   <div class="container-fluid p-2 ">
-<hr>
+    <hr>
     <p class="h3 fw-bold fst-italic text-center" style="color: #000283;">Designing Test Suites</p>
- <hr>
-</div>
-
-	<div class="container-fluid mt-2 p-3">
-		
-        <div class="d-flex flex-column justify-content-center mb-3 ">  
-				
-
-<div class="card border border-2 border-primary p-2">
-  <div class="card-body">
-	<label class="form-label fw-bold fs-5">Select a problem from the dropdown list shown below</label>
-   <select id="selectex" class="form-select float-center border border-2 border-primary" aria-label="Default select example" onchange="subex()">
-  <option value="0" selected>Exercise #</option>
-  <option value="1">Exercise 1</option>
-  
-  
-</select>
-<br>
-<p class="fw-bold fs-6" id="para1" style="display: none;">Click Submit to View Solution</p>
-<button type="button" class="btn btn-info border border-2 border-primary fw-bold" id="dispviewbtn" onclick="viewsolutionb()" disabled>Submit</button>
-
-  </div> <!-- card body ended for select exercise div-->
-</div> <!-- card ended for select exercise div-->
-
-		
-  
-
-		
-			<!----------------------------------------Problem Statement Exercise 1-------------------------------------->
-
-				<div class="card border border-2 border-info p-2" id="exercise1" style="display:none;">
-  <div class="card-body">
-	<label for="prob1" class="form-label fs-5" style="color: brown; font-weight: bold;">Design a test suite for the following problem</label>
-   <p class="fs-6" style="text-align: justify;">The Absolute Beginners Inc. seems to have been fascinated by your work. Recently they have entrusted you with a task of writing a web-based mathematical software (using JavaScript). As part of this software, your team mate has written a small module, which computes area of simple geometric shapes. A portion of the module is shown below.</p>
-  
-
-</div> <!-- card body ended for exercise 1 problem statment-->
-</div> <!-- card ended for exercise 1 problem statement-->
-
-
-
-<!----------------------------------------Problem Statement Exercise 1 complete-------------------------------------->
-
-
-	<!------------------------------------------Exercise 1 -------------------------------------------->
-
-<div class="card border border-2 border-success p-2" id="ex1" style="display:none;">
-  <div class="card-body">
-    <div class="row">
-    <div class="col-md-11" >
-
-      <!--------------------------------------------------------------- Table 1---------------------------------------------------------------->
-      <label for="table1" class="form-label fs-6" style=" font-weight: bold;">Table #1:  Code</label>
-      <form id="ftbl1"  class="p-1 bg-white " action="">
-      <div class="table-responsive">
-    <input class="form-control border-primary " type="text" id="inp1" >
-         <button id="t1addbtn" class="btn btn-primary" type="button" onclick="addbtnt1()"  ><i class="bi bi-plus-lg"></i> Create Test Suite</button>
-       
-   </div> <!-- table 1 responsive div ended for exercise 1-->
-</form>
-
-<button id="exbtn" class="btn btn-primary" type="button" onclick="exbtex1()" ><i class="bi bi-pencil-fill"></i> Execute Test Suite</button></td>
-</form>
-</div> <!-- column ended for exercise 1-->
-</div> <!--row ended for exrcise 1-->
-</div> <!--card body ended for exrcise 1-->
-</div> <!--card ended for exrcise 1-->
-
-
-
-    
-<!--------------------------------------------------- Exercise 1 complete--------------------------------------------------------->
-
-
-
- 
-  <!-------------------------------------------------------------Result Display----------------------------------------------------------------->
-
-
-				<div class="card border border-2 border-warning p-2" id="dispres" style="display:none;">
-  <div class="card-body">
-	<label for="result" class="form-label fs-4" style="color: brown; font-weight: bold;">Result</label>
-
-   <div style="font-size: medium;" id="show_result1"  style=" display: none;" >
-   <img class="img-fluid" src="./images/solution1.png" alt="solution 1">
- 
-</div> 
-<div style="font-size: medium;" id="show_result2"  style=" display: none;" >
-  <img class="img-fluid" src="./images/solution2.png" slt="solution 2">
-
-</div> 
-<br>
-<button type="button" class="btn btn-info border-primary" id="viewsol" onclick="solview()" disabled>View Solution</button>
-</div> <!-- Card body ended for result display-->
-</div> <!-- Card  ended for result display-->
-		
-</div> <!--- d-Flex ended-->
-  </div> <!-- container-fluid ended-->
-  
-  <div class="container-fluid p-1">
-  <hr>
-  <footer class="text-white text-center ">
-    <div class="text-center text-primary fs-5 "  >
-      Copyright © 2023  IIT Kharagpur,
-      <a class="text-primary fs-5" href="http://vlabs.iitkgp.ac.in/">Virtual Lab</a>
-    </div>
-   
-    </footer>
-  
     <hr>
   </div>
-   
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="./js/main.js"></script>
-    <script src="./js/exercise2.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.4.1/backbone.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jointjs/3.6.5/joint.js"></script>
+
+  <div class="container-fluid mt-2 p-3">
+
+    <div class="d-flex flex-column justify-content-center mb-3 ">
+
+
+      <div class="card border border-2 border-primary p-2">
+        <div class="card-body">
+          <label class="form-label fw-bold fs-5">Select a problem from the dropdown list shown below</label>
+          <select id="selectex" class="form-select float-center border border-2 border-primary"
+            aria-label="Default select example" onchange="subex()">
+            <option value="0" selected>Exercise #</option>
+            <option value="1">Exercise 1</option>
+
+
+          </select>
+          <br>
+          <p class="fw-bold fs-6" id="para1" style="display: none;">Click Submit to View Solution</p>
+          <button type="button" class="btn btn-info border border-2 border-primary fw-bold" id="dispviewbtn"
+            onclick="viewsolutionb()" disabled>Submit</button>
+
+        </div> <!-- card body ended for select exercise div-->
+      </div> <!-- card ended for select exercise div-->
+
+
+
+
+
+      <!----------------------------------------Problem Statement Exercise 1-------------------------------------->
+
+      <div class="card border border-2 border-info p-2" id="exercise1" style="display:none;">
+        <div class="card-body">
+          <label for="prob1" class="form-label fs-5" style="color: brown; font-weight: bold;">Design a test suite for
+            the following problem</label>
+          <p class="fs-6" style="text-align: justify;">The Absolute Beginners Inc. seems to have been fascinated by your
+            work. Recently they have entrusted you with a task of writing a web-based mathematical software (using
+            JavaScript). As part of this software, your team mate has written a small module, which computes area of
+            simple geometric shapes. A portion of the module is shown below.</p>
+
+          <p class="fs-6">
+            <span class="bluec">function </span> square(side) { <span class="bluec">return</span> side * side } <br><br>
+
+            <span class="bluec">function </span> rectangle(side1, side2) { <span class="bluec">return</span> side1 * side2; } <br><br>
+
+            <span class="bluec">function </span> circle(radius) { <span class="bluec">return</span> Math.PI * radius * radius; } <br><br>
+
+            <span class="bluec">function </span> right_triangle(base, height) { <span class="bluec">return</span> 1 / 2 * base * height; }</p>
+          <h6>
+            Prepare a test suite that will</h6>
+          <ul>
+            <li>Verify each of the above mentioned individual function is working correctly</li>
+          </ul>
+
+          <p>Your task essentially is to verify whether each of the above function is returning correct values for given
+            inputs. For example, a rectangle with length 10 unit and breadth 5 unit will have an area of 50 sq. unit.
+            This can be verified from the output of the function call <br>
+
+            rectangle(10, 5); <br>
+
+            However, testing also attempts to point out possible bugs in the software. How would the above code behave
+            for a call <br>
+
+
+            rectangle(10, -5);
+            <br>
+
+          </p>
+
+          <h6>Modify the code to address this defect.</h6>
+          <ul>
+            <li>In each function, return -1 if any given dimension is negative</li>
+            <li>Modify the test suite such that it reflects desired performance for both correct and incorrect input(s)
+            </li>
+            <li>The code has another bug -- how would you identify it from testing results? Fix the bug and test it
+              again.</li>
+          </ul>
+
+          <h6>Learning Objectives:</h6>
+          <ul>
+            <li>
+              Get familiarized with unit testing</li>
+            <li>Verify implementation of functional requirements by writing test cases</li>
+            <li>Analyze results of testing to ascertain the current state of a project</li>
+</ul>
+            <p><b>Limitations:</b> This workspace attempts to provide a very simple version of a testing framework. Real
+              life testing frameworks are much more extensive and provide a lot of options like creating test cases from
+              user requirements, automatic reporting of bug when a test case fails, and so on. Nevertheless, this
+              workspace is expected to make a student familiar to testing and some of it's templates and reports.
+            </p>
+        </div> <!-- card body ended for exercise 1 problem statment-->
+      </div> <!-- card ended for exercise 1 problem statement-->
+
+
+
+      <!----------------------------------------Problem Statement Exercise 1 complete-------------------------------------->
+
+
+      <!------------------------------------------Exercise 1 -------------------------------------------->
+
+      <div class="card border border-2 border-success p-2" id="ex1" style="display:none;">
+        <div class="card-body">
+          <div class="row">
+            <div class="col-md-12">
+
+              <!--------------------------------------------------------------- Table 1---------------------------------------------------------------->
+              <label for="table1" class="form-label fs-6" style=" font-weight: bold;"> Code</label>
+              <form id="ftbl1" class="p-1 bg-white " action="">
+                <div class="table-responsive">
+                  <div class="col-md-1">
+                  <select class="form-select " onchange="chngfontsz(this);" size="1">
+                    <option>8pt</option>
+                    <option>9pt</option>
+                    <option>10pt</option>
+                    <option>11pt</option>
+                    <option selected>12pt</option>
+                    <option>14pt</option>
+                    
+                  </select></div>
+                  <textarea class="form-control border-primary mb-2 " type="text" id="inp1"
+                    rows="5">function sum(x, y) { return x+y }</textarea>
+                  <button id="t1addbtn" class="btn btn-primary" type="button" onclick="addbtn1()"><i
+                      class="bi bi-plus-lg"></i> Create Test Suite</button>
+
+                </div> <!-- table 1 responsive div ended for exercise 1-->
+              </form>
+
+              <!--------------------------------------------------------------- Table 2 ---------------------------------------------------------------->
+             
+              <form id="ftbl2" class="p-1 bg-white " action="" style="display: none;">
+                <!--h6 for="table2" class="form-label fs-6" style=" font-weight: bold;"> Add title and summary
+                  for test suite</h6-->
+                <label for="lable2" class="form-label fs-6" style=" font-weight: bold;">Title</label>
+                <input class="form-control border-primary mb-2 " type="text" id="inp2">
+                <label for="lable3" class="form-label fs-6" style=" font-weight: bold;">Summary</label>
+                <textarea type="text" id="inp3" class="form-control border-primary mb-2 " rows="5"></textarea>
+                <button id="t2addbtn" class="btn btn-primary" type="button" onclick="addbtn2()"><i
+                    class="bi bi-plus-lg"></i> Add</button>
+                <button id="t3addbtn" class="btn fw-bold" type="button" onclick="addbtn3()"><i
+                    class="bi bi-x-lg"></i> Cancel</button>
+
+              </form>
+
+
+              <!--------------------------------------------------------------- Table 3 ---------------------------------------------------------------->
+             
+              <form id="ftbl3" class="p-1 bg-white " action="" style="display: none;">
+                <!--label for="table3" class="form-label fs-6" style=" font-weight: bold;"> Test suite</label-->
+                <!--input type="text" class="form-control border-primary mb-2 " placeholder="Test Suite id number"
+                  id="tsid" readonly>
+                <input type="text" class="form-control border-primary mb-2 " id="tstitle" placeholder="Test Suite Title"
+                  readonly>
+                <input type="text" class="form-control border-primary mb-2 " id="tssummary"
+                  placeholder="Test Suite Summary" readonly-->
+                  <div class="table-responsive">
+                  <table class="table table-bordered   ">
+                    <thead>
+                      <th>TS id</th>
+                      <th>Title</th>
+                      <th>Summary</th>
+                      <th>Remove</th>
+                    </thead>
+                    <tbody id="tbodyt3"></tbody>
+                  </table>
+                </div>
+                <!--button id="t1addbtn" class="btn btn-danger" type="button" onclick="addbtn4()"><i
+                    class="bi bi-x-lg"></i> Remove</button-->
+                <button id="t4addbtn" class="btn btn-primary" type="button" onclick="addbtn4()"><i class="bi bi-plus-circle"></i> Add Test Cases</button>
+
+
+              </form>
+
+              <!--------------------------------------------------------------- Table 4 ---------------------------------------------------------------->
+              
+              <form id="ftbl4" class="p-1 bg-white " action="" style="display: none;">
+                <!--label for="table4" class="form-label fs-6" style=" font-weight: bold;"> Test Cases</label-->
+                <div class="table-responsive">
+                <table id="table4" class="table table-responsive table-bordered ">
+                  <thead>
+                    <th>Test Suite No.</th>
+                    <th>Summary</th>
+                    <th>Script</th>
+                    <th>Expected Output</th>
+                    <th>Actual Output</th>
+                    <th>Manual Testing</th>
+                    <th>Status</th>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>TS0</td>
+                      <td><input type="text" class="form-control border-primary mb-2 " id="summary" value="Test" readonly></td>
+                      <td><input type="text" class="form-control border-primary mb-2 " id="script" value="sum(12,34)" readonly>
+                      </td>
+                      <td><input type="text" class="form-control border-primary mb-2 " id="eo" value="46" readonly></td>
+                      <td><input type="text" class="form-control border-primary mb-2 " id="ao" value=""></td>
+                      <td>
+                        <div class="form-check" >
+                          <input class="form-check-input" type="checkbox" value="" id="yes">
+                          <label class="form-check-label" for="yes">
+                            Yes
+                          </label>
+                        </div>
+                      </td>
+                      <td id="status1">No Run</td>
+                    </tr>
+                    <tr>
+                      <td>TS1</td>
+                      <td><input type="text" class="form-control border-primary mb-2 " id="summary2" value=""></td>
+                      <td><input type="text" class="form-control border-primary mb-2 " id="script2" value=""></td>
+                      <td><input type="text" class="form-control border-primary mb-2 " id="eo2" value=""></td>
+                      <td><input type="text" class="form-control border-primary mb-2 " id="ao2"></td>
+                      <td>
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="yes2">
+                          <label class="form-check-label" for="yes2">
+                            Yes
+                          </label>
+                        </div>
+                      </td>
+                      <td id="status2">No Run</td>
+                    </tr>
+                    <tr>
+                      <td>TS2</td>
+                      <td><input type="text" class="form-control border-primary mb-2 " id="summary3" value=""></td>
+                      <td><input type="text" class="form-control border-primary mb-2 " id="script3" value=""></td>
+                      <td><input type="text" class="form-control border-primary mb-2 " id="eo3" value=""></td>
+                      <td><input type="text" class="form-control border-primary mb-2 " id="ao3"></td>
+                      <td>
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="yes3">
+                          <label class="form-check-label" for="yes3">
+                            Yes
+                          </label>
+                        </div>
+                      </td>
+                      <td id="status3">No Run</td>
+                    </tr>
+                    <tr>
+                      <td>TS3</td>
+                      <td><input type="text" class="form-control border-primary mb-2 " id="summary4" value=""></td>
+                      <td><input type="text" class="form-control border-primary mb-2 " id="script4" value=""></td>
+                      <td><input type="text" class="form-control border-primary mb-2 " id="eo4" value=""></td>
+                      <td><input type="text" class="form-control border-primary mb-2 " id="ao4"></td>
+                      <td>
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="yes4">
+                          <label class="form-check-label" for="yes4">
+                            Yes
+                          </label>
+                        </div>
+                      </td>
+                      <td id="status4">No Run</td>
+                    </tr>
+                    <tr>
+                      <td>TS4</td>
+                      <td><input type="text" class="form-control border-primary mb-2 " id="summary5" value=""></td>
+                      <td><input type="text" class="form-control border-primary mb-2 " id="script5" value=""></td>
+                      <td><input type="text" class="form-control border-primary mb-2 " id="eo5" value=""></td>
+                      <td><input type="text" class="form-control border-primary mb-2 " id="ao5"></td>
+                      <td>
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="yes5">
+                          <label class="form-check-label" for="yes5">
+                            Yes
+                          </label>
+                        </div>
+                      </td>
+                      <td id="status5">No Run</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+                <button id="exbtn" class="btn btn-primary" type="button" onclick="exbtex1()"><i
+                    class="bi bi-box-arrow-right"></i> Execute Test Suite</button></td>
+
+
+              </form>
+<!--------------------------------------------------------------- Table 5 ---------------------------------------------------------------->
+
+              <form id="ftbl5" class="p-1 bg-white " action="" style="display: none;">
+                <label for="table5" class="form-label fs-6" style=" font-weight: bold;">Test Suite: Execution Result </label>
+                <div class="table-responsive">
+                  <table class="table table-responsive table-bordered ">
+                    <thead>
+                    
+                    </thead>
+                    <tbody id="colorchng">
+                      <tr>
+                        <td class="fs-5"># of test cases passed</td>
+                        <td class="fs-5"><input class="form-control border-primary fs-5 " type="number" id="optd1" readonly></td>
+                      </tr>
+                      <tr>
+                        <td class="fs-5"># of test cases failed</td>
+                        <td class="fs-5"><input class="form-control border-primary fs-5 " type="number" id="optd2" readonly></td>
+                      </tr>
+                      <tr>
+                        <td class="fs-5">Total # of test cases</td>
+                        <td class="fs-5"><input class="form-control border-primary fs-5 " type="number" id="optd3" readonly></td>
+                      </tr>
+                      <tr>
+                        <td class="fs-5">Test suite status</td>
+                        <td class="fs-5"><input class="form-control border-primary  fs-5" type="text" id="optd4" readonly></td>
+                      </tr>
+                      </tbody>
+                      </table>
+                      </div>
+              </form>
+            </div> <!-- column ended for exercise 1-->
+          </div> <!--row ended for exrcise 1-->
+        </div> <!--card body ended for exrcise 1-->
+      </div> <!--card ended for exrcise 1-->
+
+
+
+
+      <!--------------------------------------------------- Exercise 1 complete--------------------------------------------------------->
+
+
+
+
+      <!-------------------------------------------------------------Result Display----------------------------------------------------------------->
+
+
+      <div class="card border border-2 border-warning p-2" id="dispres" style="display:none;">
+        <div class="card-body">
+          <label for="result" class="form-label fs-4" style="color: brown; font-weight: bold;">Result</label>
+
+          <div style="font-size: medium;" id="show_result1" style=" display: none;">
+           
+          </div>
+          
+          <br>
+          <button type="button" class="btn btn-info border-primary" id="viewsol" onclick="solview()" disabled>View
+            Solution</button>
+        </div> <!-- Card body ended for result display-->
+      </div> <!-- Card  ended for result display-->
+
+    </div> <!--- d-Flex ended-->
+  </div> <!-- container-fluid ended-->
+
+  <div class="container-fluid p-1">
+    <hr>
+    <footer class="text-white text-center ">
+      <div class="text-center text-primary fs-5 ">
+        Copyright © 2023 IIT Kharagpur,
+        <a class="text-primary fs-5" href="http://vlabs.iitkgp.ac.in/">Virtual Lab</a>
+      </div>
+
+    </footer>
+
+    <hr>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./js/main.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.4.1/backbone.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jointjs/3.6.5/joint.js"></script>
 </body>
+
 </html>
