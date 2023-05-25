@@ -37,32 +37,22 @@ function subex() {
 function viewsolutionb() { //submit button
   document.getElementById("dispres").style.display = "block";
   document.getElementById("show_result1").style.display = "none";
-  document.getElementById("show_result2").style.display = "none";
   document.getElementById("viewsol").disabled = false;
   document.getElementById("dispviewbtn").disabled = true;
-  if (ex.options[ex.selectedIndex].value == 1) {
+ 
     window.scrollBy(0, 1800);
-  }
-  if (ex.options[ex.selectedIndex].value == 2) {
-    window.scrollBy(0, 2800);
-  }
+
 
 }
 
 function solview() {  //view solution button
   if (ex.options[ex.selectedIndex].value == 1) {
     document.getElementById("show_result1").style.display = "block";
-    document.getElementById("show_result2").style.display = "none";
+   
     document.getElementById("viewsol").disabled = true;
 
   }
-  if (ex.options[ex.selectedIndex].value == 2) {
-    document.getElementById("show_result2").style.display = "block";
-    document.getElementById("show_result1").style.display = "none";
-    document.getElementById("viewsol").disabled = true;
-
-  }
-
+  
 }
 
 
@@ -248,6 +238,7 @@ function exbtex1() {
     document.getElementById("optd3").value = rowsc;
     document.getElementById("optd4").value = "Passed";
     document.getElementById("status1").innerHTML = "Pass";
+    document.getElementById("status1").style.backgroundColor = "#5AC502";
     document.getElementById("colorchng").style.backgroundColor = "#BEFF99";
 
   }
@@ -259,6 +250,7 @@ function exbtex1() {
     document.getElementById("optd3").value = rowsc;
     document.getElementById("optd4").value = "Failed";
     document.getElementById("status1").innerHTML = "Fail"
+    document.getElementById("status1").style.backgroundColor = "#FCDC25";
     document.getElementById("colorchng").style.backgroundColor = "#FFBD99";
 
   }
@@ -284,6 +276,7 @@ function exbtex1() {
     document.getElementById("optd3").value = rowsc;
     document.getElementById("optd4").value = "Passed";
     document.getElementById("status2").innerHTML = "Pass";
+    document.getElementById("status2").style.backgroundColor = "#5AC502";
     document.getElementById("colorchng").style.backgroundColor = "#BEFF99";
 
   }
@@ -298,6 +291,7 @@ function exbtex1() {
     document.getElementById("optd3").value = rowsc;
     document.getElementById("optd4").value = "Failed";
     document.getElementById("status2").innerHTML = "Fail"
+    document.getElementById("status2").style.backgroundColor = "#FCDC25";
     document.getElementById("colorchng").style.backgroundColor = "#FFBD99";
 
   }
@@ -318,6 +312,7 @@ function exbtex1() {
     document.getElementById("optd3").value = rowsc;
     document.getElementById("optd4").value = "Passed";
     document.getElementById("status3").innerHTML = "Pass";
+    document.getElementById("status3").style.backgroundColor = "#5AC502";
     document.getElementById("colorchng").style.backgroundColor = "#BEFF99";
 
   }
@@ -329,6 +324,7 @@ function exbtex1() {
     document.getElementById("optd3").value = rowsc;
     document.getElementById("optd4").value = "Failed";
     document.getElementById("status3").innerHTML = "Fail"
+    document.getElementById("status3").style.backgroundColor = "#FCDC25";
     document.getElementById("colorchng").style.backgroundColor = "#FFBD99";
 
 
@@ -350,6 +346,7 @@ function exbtex1() {
     document.getElementById("optd3").value = rowsc;
     document.getElementById("optd4").value = "Passed";
     document.getElementById("status4").innerHTML = "Pass";
+    document.getElementById("status4").style.backgroundColor = "#5AC502";
     document.getElementById("colorchng").style.backgroundColor = "#BEFF99";
 
   }
@@ -361,6 +358,7 @@ function exbtex1() {
     document.getElementById("optd3").value = rowsc;
     document.getElementById("optd4").value = "Failed";
     document.getElementById("status4").innerHTML = "Fail"
+    document.getElementById("status4").style.backgroundColor = "#FCDC25";
     document.getElementById("colorchng").style.backgroundColor = "#FFBD99";
 
 
@@ -385,6 +383,7 @@ function exbtex1() {
     document.getElementById("optd3").value = rowsc;
     document.getElementById("optd4").value = "Passed";
     document.getElementById("status5").innerHTML = "Pass";
+    document.getElementById("status5").style.backgroundColor = "#5AC502";
     document.getElementById("colorchng").style.backgroundColor = "#BEFF99";
 
   }
@@ -397,6 +396,7 @@ function exbtex1() {
     document.getElementById("optd3").value = rowsc;
     document.getElementById("optd4").value = "Failed";
     document.getElementById("status5").innerHTML = "Fail"
+    document.getElementById("status5").style.backgroundColor = "#FCDC25";
     document.getElementById("colorchng").style.backgroundColor = "#FFBD99";
 
 

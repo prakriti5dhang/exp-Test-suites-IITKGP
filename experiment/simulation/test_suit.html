@@ -372,12 +372,417 @@ Author: Prakriti Dhang
 
       <div class="card border border-2 border-warning p-2" id="dispres" style="display:none;">
         <div class="card-body">
-          <label for="result" class="form-label fs-4" style="color: brown; font-weight: bold;">Result</label>
+          <label for="result" class="form-label fs-4" style="color: brown; font-weight: bold;">Solution</label>
 
           <div style="font-size: medium;" id="show_result1" style=" display: none;">
-           
-          </div>
+            <p class="fs-6">The code shown above in the textarea is the code against which we have to create our test cases. 
+              The displayed code is a modified version, which returns -1 whenever any dimension of a shape is 
+              specified as negative. Once this code is ready, we can create a test suite and add test cases as 
+              shown below.</p>
+           <div class="table-responsive">
+            <table class="table table-bordered">
+              <thead>
+                <th>Test Suite id</th>
+                <th>Summary</th>
+                <th>Script</th>
+                <th>Expected Output</th>
+                <th>Actual Output</th>
+                <th>Manual Testing</th>
+                <th>Status</th>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>TS0</td>
+                  <td><input type="text" class="form-control border-primary mb-2 " value="Test" readonly></td>
+                  <td><input type="text" class="form-control border-primary mb-2 "  value="sum(12,34)" readonly>
+                  </td>
+                  <td><input type="text" class="form-control border-primary mb-2 "  value="46" readonly></td>
+                  <td><input type="text" class="form-control border-primary mb-2 "  value=""></td>
+                  <td>
+                    <div class="form-check" >
+                      <input class="form-check-input" type="checkbox" value="" >
+                      <label class="form-check-label" for="yes">
+                        Yes
+                      </label>
+                    </div>
+                  </td>
+                  <td >No Run</td>
+                </tr>
+                <tr>
+                  <td>TS1</td>
+                  <td><input type="text" class="form-control border-primary mb-2 "  value="Verify square"></td>
+                  <td><input type="text" class="form-control border-primary mb-2 "  value="square(10)"></td>
+                  <td><input type="text" class="form-control border-primary mb-2 "  value="100"></td>
+                  <td><input type="text" class="form-control border-primary mb-2 "  value =""></td>
+                  <td>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" >
+                      <label class="form-check-label" for="yes2">
+                        Yes
+                      </label>
+                    </div>
+                  </td>
+                  <td >No Run</td>
+                </tr>
+                <tr>
+                  <td>TS2</td>
+                  <td><input type="text" class="form-control border-primary mb-2 " value="verify rectangle"></td>
+                  <td><input type="text" class="form-control border-primary mb-2 "  value="rectangle(5.5,10)"></td>
+                  <td><input type="text" class="form-control border-primary mb-2 "  value="55"></td>
+                  <td><input type="text" class="form-control border-primary mb-2 "  value=""></td>
+                  <td>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="yes3">
+                      <label class="form-check-label" for="yes3">
+                        Yes
+                      </label>
+                    </div>
+                  </td>
+                  <td >No Run</td>
+                </tr>
+                <tr>
+                  <td>TS3</td>
+                  <td><input type="text" class="form-control border-primary mb-2 "  value="Verify circle"></td>
+                  <td><input type="text" class="form-control border-primary mb-2 "  value="circle(7)"></td>
+                  <td><input type="text" class="form-control border-primary mb-2 "  value="154"></td>
+                  <td><input type="text" class="form-control border-primary mb-2 "  value=""></td>
+                  <td>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" >
+                      <label class="form-check-label" for="yes4">
+                        Yes
+                      </label>
+                    </div>
+                  </td>
+                  <td >No Run</td>
+                </tr>
+                <tr>
+                  <td>TS4</td>
+                  <td><input type="text" class="form-control border-primary mb-2 "  value="Right triangle"></td>
+                  <td><input type="text" class="form-control border-primary mb-2 "  value="right_triangle(13,7)"></td>
+                  <td><input type="text" class="form-control border-primary mb-2 "  value="45.5"></td>
+                  <td><input type="text" class="form-control border-primary mb-2 " value=""></td>
+                  <td>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" >
+                      <label class="form-check-label" for="yes5">
+                        Yes
+                      </label>
+                    </div>
+                  </td>
+                  <td >No Run</td>
+                </tr>
+                <tr>
+                  <td>TS5</td>
+                  <td><input type="text" class="form-control border-primary mb-2 "  value="Circle(negative)"></td>
+                  <td><input type="text" class="form-control border-primary mb-2 "  value="circle(-14)"></td>
+                  <td><input type="text" class="form-control border-primary mb-2 "  value="-1"></td>
+                  <td><input type="text" class="form-control border-primary mb-2 "  value=""></td>
+                  <td>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" >
+                      <label class="form-check-label" for="yes5">
+                        Yes
+                      </label>
+                    </div>
+                  </td>
+                  <td >No Run</td>
+                </tr>
+              </tbody>
+            </table>
+           </div>
+           <p class="fs-6">The result of execution of this test suite is displayed below:</p>
+
+           <div class="table-responsive">
+            <table class="table table-bordered">
+              <thead>
+                <th>Test Suite id</th>
+                <th>Summary</th>
+                <th>Script</th>
+                <th>Expected Output</th>
+                <th>Actual Output</th>
+                <th>Manual Testing</th>
+                <th>Status</th>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>TS0</td>
+                  <td><input type="text" class="form-control border-primary mb-2 "  value="Test" readonly></td>
+                  <td><input type="text" class="form-control border-primary mb-2 "  value="sum(12,34)" readonly>
+                  </td>
+                  <td><input type="text" class="form-control border-primary mb-2 "  value="46" readonly></td>
+                  <td><input type="text" class="form-control border-primary mb-2 "  value="46"></td>
+                  <td>
+                    <div class="form-check" >
+                      <input class="form-check-input" type="checkbox" value="" >
+                      <label class="form-check-label" for="yes">
+                        Yes
+                      </label>
+                    </div>
+                  </td>
+                  <td >Pass</td>
+                </tr>
+                <tr>
+                  <td>TS1</td>
+                  <td><input type="text" class="form-control border-primary mb-2 "  value="Verify square"></td>
+                  <td><input type="text" class="form-control border-primary mb-2 "  value="square(10)"></td>
+                  <td><input type="text" class="form-control border-primary mb-2 "  value="100"></td>
+                  <td><input type="text" class="form-control border-primary mb-2 "  value ="100"></td>
+                  <td>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" >
+                      <label class="form-check-label" for="yes2">
+                        Yes
+                      </label>
+                    </div>
+                  </td>
+                  <td >Pass</td>
+                </tr>
+                <tr>
+                  <td style="background-color: rgb(90, 197, 2);">TS2</td>
+                  <td><input type="text" class="form-control border-primary mb-2 "  value="verify rectangle"></td>
+                  <td><input type="text" class="form-control border-primary mb-2 "  value="rectangle(5.5,10)"></td>
+                  <td><input type="text" class="form-control border-primary mb-2 "  value="55"></td>
+                  <td><input type="text" class="form-control border-primary mb-2 "  value="30.5"></td>
+                  <td>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" >
+                      <label class="form-check-label" for="yes3">
+                        Yes
+                      </label>
+                    </div>
+                  </td>
+                  <td  style="background-color:rgb(252, 220, 37);">Fail</td>
+                </tr>
+                <tr>
+                  <td>TS3</td>
+                  <td><input type="text" class="form-control border-primary mb-2 "  value="Verify circle"></td>
+                  <td><input type="text" class="form-control border-primary mb-2 "  value="circle(7)"></td>
+                  <td><input type="text" class="form-control border-primary mb-2 " value="154"></td>
+                  <td><input type="text" class="form-control border-primary mb-2 "  value="154"></td>
+                  <td>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" >
+                      <label class="form-check-label" for="yes4">
+                        Yes
+                      </label>
+                    </div>
+                  </td>
+                  <td >Pass</td>
+                </tr>
+                <tr>
+                  <td>TS4</td>
+                  <td><input type="text" class="form-control border-primary mb-2 "  value="Right triangle"></td>
+                  <td><input type="text" class="form-control border-primary mb-2 "  value="right_triangle(13,7)"></td>
+                  <td><input type="text" class="form-control border-primary mb-2 "  value="45.5"></td>
+                  <td><input type="text" class="form-control border-primary mb-2 "  value="45.5"></td>
+                  <td>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" >
+                      <label class="form-check-label" for="yes5">
+                        Yes
+                      </label>
+                    </div>
+                  </td>
+                  <td >Pass</td>
+                </tr>
+                <tr>
+                  <td>TS5</td>
+                  <td><input type="text" class="form-control border-primary mb-2 "  value="Circle(negative)"></td>
+                  <td><input type="text" class="form-control border-primary mb-2 "  value="circle(-14)"></td>
+                  <td><input type="text" class="form-control border-primary mb-2 "  value="-1"></td>
+                  <td><input type="text" class="form-control border-primary mb-2 "  value="-1"></td>
+                  <td>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" >
+                      <label class="form-check-label" for="yes6">
+                        Yes
+                      </label>
+                    </div>
+                  </td>
+                  <td >Pass</td>
+                </tr>
+              </tbody>
+            </table>
+           </div>
+
+
+
+           <div class="table-responsive">
+            <table class="table  table-bordered ">
+              <thead>
+              
+              </thead>
+              <tbody id="colorchng" style="background-color: #FFBD99;">
+                <tr>
+                  <td class="fs-5"># of test cases passed</td>
+                  <td class="fs-5"><input class="form-control border-primary fs-5 " type="number" id="optd1" value="4" readonly></td>
+                </tr>
+                <tr>
+                  <td class="fs-5"># of test cases failed</td>
+                  <td class="fs-5"><input class="form-control border-primary fs-5 " type="number" id="optd2" value="1" readonly></td>
+                </tr>
+                <tr>
+                  <td class="fs-5">Total # of test cases</td>
+                  <td class="fs-5"><input class="form-control border-primary fs-5 " type="number" id="optd3" value="5" readonly></td>
+                </tr>
+                <tr>
+                  <td class="fs-5">Test suite status</td>
+                  <td class="fs-5"><input class="form-control border-primary  fs-5" type="text"  id="optd4"value="Failed" readonly></td>
+                </tr>
+                </tbody>
+                </table>
+                </div>
+<p class="fs-6">Note that the call to "circle( -14 )" returns -1 as expected. However, one of the test cases, 
+  "rectangle( 5.5, 10 )" fails. We can verify from the "Actual Output" column that this function didn't return 
+  the correct value. This is a bug.
+<br>
+  To identify the source of this bug, we look at the "rectnagle( side1, side2 )" function in our code base.
+   After observing minutely we find that the code in line #8 should have returned "side1 * side2" instead of
+    "side1 * side1". We fix this bug, and run the test suite again. We get the following output where the entire 
+    test suite passes.</p>
+         
           
+
+          <div class="table-responsive">
+            <table class="table table-bordered">
+              <thead>
+                <th>Test Suite id</th>
+                <th>Summary</th>
+                <th>Script</th>
+                <th>Expected Output</th>
+                <th>Actual Output</th>
+                <th>Manual Testing</th>
+                <th>Status</th>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>TS0</td>
+                  <td><input type="text" class="form-control border-primary mb-2 "  value="Test" readonly></td>
+                  <td><input type="text" class="form-control border-primary mb-2 "  value="sum(12,34)" readonly>
+                  </td>
+                  <td><input type="text" class="form-control border-primary mb-2 "  value="46" readonly></td>
+                  <td><input type="text" class="form-control border-primary mb-2 "  value="46"></td>
+                  <td>
+                    <div class="form-check" >
+                      <input class="form-check-input" type="checkbox" value="" >
+                      <label class="form-check-label" for="yes">
+                        Yes
+                      </label>
+                    </div>
+                  </td>
+                  <td >Pass</td>
+                </tr>
+                <tr>
+                  <td>TS1</td>
+                  <td><input type="text" class="form-control border-primary mb-2 "  value="Verify square"></td>
+                  <td><input type="text" class="form-control border-primary mb-2 "  value="square(10)"></td>
+                  <td><input type="text" class="form-control border-primary mb-2 "  value="100"></td>
+                  <td><input type="text" class="form-control border-primary mb-2 "  value ="100"></td>
+                  <td>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" >
+                      <label class="form-check-label" for="yes2">
+                        Yes
+                      </label>
+                    </div>
+                  </td>
+                  <td >Pass</td>
+                </tr>
+                <tr>
+                  <td style="background-color: rgb(90, 197, 2);">TS2</td>
+                  <td><input type="text" class="form-control border-primary mb-2 "  value="verify rectangle"></td>
+                  <td><input type="text" class="form-control border-primary mb-2 "  value="rectangle(5.5,10)"></td>
+                  <td><input type="text" class="form-control border-primary mb-2 "  value="55"></td>
+                  <td><input type="text" class="form-control border-primary mb-2 "  value="55"></td>
+                  <td>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" >
+                      <label class="form-check-label" for="yes3">
+                        Yes
+                      </label>
+                    </div>
+                  </td>
+                  <td  style="background-color: rgb(252, 220, 37);">Pass</td>
+                </tr>
+                <tr>
+                  <td>TS3</td>
+                  <td><input type="text" class="form-control border-primary mb-2 "  value="Verify circle"></td>
+                  <td><input type="text" class="form-control border-primary mb-2 "  value="circle(7)"></td>
+                  <td><input type="text" class="form-control border-primary mb-2 " value="154"></td>
+                  <td><input type="text" class="form-control border-primary mb-2 "  value="154"></td>
+                  <td>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" >
+                      <label class="form-check-label" for="yes4">
+                        Yes
+                      </label>
+                    </div>
+                  </td>
+                  <td >Pass</td>
+                </tr>
+                <tr>
+                  <td>TS4</td>
+                  <td><input type="text" class="form-control border-primary mb-2 "  value="Right triangle"></td>
+                  <td><input type="text" class="form-control border-primary mb-2 "  value="right_triangle(13,7)"></td>
+                  <td><input type="text" class="form-control border-primary mb-2 "  value="45.5"></td>
+                  <td><input type="text" class="form-control border-primary mb-2 "  value="45.5"></td>
+                  <td>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" >
+                      <label class="form-check-label" for="yes5">
+                        Yes
+                      </label>
+                    </div>
+                  </td>
+                  <td >Pass</td>
+                </tr>
+                <tr>
+                  <td>TS5</td>
+                  <td><input type="text" class="form-control border-primary mb-2 "  value="Circle(negative)"></td>
+                  <td><input type="text" class="form-control border-primary mb-2 "  value="circle(-14)"></td>
+                  <td><input type="text" class="form-control border-primary mb-2 "  value="-1"></td>
+                  <td><input type="text" class="form-control border-primary mb-2 "  value="-1"></td>
+                  <td>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" >
+                      <label class="form-check-label" for="yes6">
+                        Yes
+                      </label>
+                    </div>
+                  </td>
+                  <td >Pass</td>
+                </tr>
+              </tbody>
+            </table>
+           </div>
+
+           <div class="table-responsive">
+            <table class="table table-responsive table-bordered ">
+              <thead>
+              
+              </thead>
+              <tbody id="colorchng" style="background-color: #BEFF99;">
+                <tr>
+                  <td class="fs-5"># of test cases passed</td>
+                  <td class="fs-5"><input class="form-control border-primary fs-5 " type="number" id="optd1" value="5" readonly></td>
+                </tr>
+                <tr>
+                  <td class="fs-5"># of test cases failed</td>
+                  <td class="fs-5"><input class="form-control border-primary fs-5 " type="number" id="optd2" value="0" readonly></td>
+                </tr>
+                <tr>
+                  <td class="fs-5">Total # of test cases</td>
+                  <td class="fs-5"><input class="form-control border-primary fs-5 " type="number" id="optd3" value="5" readonly></td>
+                </tr>
+                <tr>
+                  <td class="fs-5">Test suite status</td>
+                  <td class="fs-5"><input class="form-control border-primary  fs-5" type="text"  id="optd4"value="Passed" readonly></td>
+                </tr>
+                </tbody>
+                </table>
+                </div></div>
+
           <br>
           <button type="button" class="btn btn-info border-primary" id="viewsol" onclick="solview()" disabled>View
             Solution</button>
