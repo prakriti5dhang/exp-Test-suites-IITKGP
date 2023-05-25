@@ -238,7 +238,7 @@ function exbtex1() {
     document.getElementById("optd3").value = rowsc;
     document.getElementById("optd4").value = "Passed";
     document.getElementById("status1").innerHTML = "Pass";
-    document.getElementById("status1").style.backgroundColor = "#5AC502";
+    document.getElementById("status1").style.backgroundColor = "#A2FF55";
     document.getElementById("colorchng").style.backgroundColor = "#BEFF99";
 
   }
@@ -276,7 +276,7 @@ function exbtex1() {
     document.getElementById("optd3").value = rowsc;
     document.getElementById("optd4").value = "Passed";
     document.getElementById("status2").innerHTML = "Pass";
-    document.getElementById("status2").style.backgroundColor = "#5AC502";
+    document.getElementById("status2").style.backgroundColor = "#A2FF55";
     document.getElementById("colorchng").style.backgroundColor = "#BEFF99";
 
   }
@@ -312,7 +312,7 @@ function exbtex1() {
     document.getElementById("optd3").value = rowsc;
     document.getElementById("optd4").value = "Passed";
     document.getElementById("status3").innerHTML = "Pass";
-    document.getElementById("status3").style.backgroundColor = "#5AC502";
+    document.getElementById("status3").style.backgroundColor = "#A2FF55";
     document.getElementById("colorchng").style.backgroundColor = "#BEFF99";
 
   }
@@ -346,7 +346,7 @@ function exbtex1() {
     document.getElementById("optd3").value = rowsc;
     document.getElementById("optd4").value = "Passed";
     document.getElementById("status4").innerHTML = "Pass";
-    document.getElementById("status4").style.backgroundColor = "#5AC502";
+    document.getElementById("status4").style.backgroundColor = "#A2FF55";
     document.getElementById("colorchng").style.backgroundColor = "#BEFF99";
 
   }
@@ -383,7 +383,7 @@ function exbtex1() {
     document.getElementById("optd3").value = rowsc;
     document.getElementById("optd4").value = "Passed";
     document.getElementById("status5").innerHTML = "Pass";
-    document.getElementById("status5").style.backgroundColor = "#5AC502";
+    document.getElementById("status5").style.backgroundColor = "#A2FF55";
     document.getElementById("colorchng").style.backgroundColor = "#BEFF99";
 
   }
