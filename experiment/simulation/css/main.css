@@ -21,6 +21,22 @@ input::-webkit-inner-spin-button {
   margin: 0;
 }
 
+#status1 {
+  border: 0px solid;
+}
+#status2 {
+  border: 0px solid;
+}
+#status3 {
+  border: 0px solid;
+}
+#status4 {
+  border: 0px solid;
+}
+#status5 {
+  border: 0px solid;
+}
+
 #optd1{
   border: 0px solid;
   background-color: transparent;

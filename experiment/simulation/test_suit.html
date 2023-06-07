@@ -15,7 +15,7 @@ Author: Prakriti Dhang
   <link rel="stylesheet" href="./css/main.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/jointjs/3.6.2/joint.css" />
+  <!--link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/jointjs/3.6.2/joint.css" /-->
 
 
 
@@ -90,7 +90,7 @@ Author: Prakriti Dhang
           <p class="fs-6">
             <span class="bluec">function </span> square(side) { <span class="bluec">return</span> side * side } <br><br>
 
-            <span class="bluec">function </span> rectangle(side1, side1) { <span class="bluec">return</span> side1 * side2; } <br><br>
+            <span class="bluec">function </span> rectangle(side1, side2) { <span class="bluec">return</span> side1 * side2; } <br><br>
 
             <span class="bluec">function </span> circle(radius) { <span class="bluec">return</span> Math.PI * radius * radius; } <br><br>
 
@@ -237,84 +237,84 @@ Author: Prakriti Dhang
                   <tbody>
                     <tr>
                       <td>TS0</td>
-                      <td><input type="text" class="form-control border-primary mb-2 " id="summary" value="Test" readonly></td>
+                      <td><input type="text" class="form-control border-primary mb-2 " id="summary0" value="Sum" readonly></td>
                       <td><input type="text" class="form-control border-primary mb-2 " id="script" value="sum(12,34)" readonly>
                       </td>
                       <td><input type="text" class="form-control border-primary mb-2 " id="eo" value="46" readonly></td>
                       <td><input type="text" class="form-control border-primary mb-2 " id="ao" value=""></td>
                       <td>
                         <div class="form-check" >
-                          <input class="form-check-input" type="checkbox" value="" id="yes">
+                          <input class="form-check-input" type="checkbox" value="" id="yes" onchange="handleChange(this)">
                           <label class="form-check-label" for="yes">
                             Yes
                           </label>
                         </div>
                       </td>
-                      <td id="status1">No Run</td>
+                      <td ><input type="text" class="form-control   mb-2 " id="status1" value="No Run" readonly="readonly"  ></td>
                     </tr>
                     <tr>
                       <td>TS1</td>
-                      <td><input type="text" class="form-control border-primary mb-2 " id="summary2" value=""></td>
-                      <td><input type="text" class="form-control border-primary mb-2 " id="script2" value=""></td>
+                      <td><input type="text" class="form-control border-primary mb-2 " id="summary1" value=""></td>
+                      <td><input type="text" class="form-control border-primary mb-2 " id="script2" ></td>
                       <td><input type="text" class="form-control border-primary mb-2 " id="eo2" value=""></td>
-                      <td><input type="text" class="form-control border-primary mb-2 " id="ao2"></td>
+                      <td><input type="text" class="form-control border-primary mb-2 " id="ao2" value=""></td>
                       <td>
                         <div class="form-check">
-                          <input class="form-check-input" type="checkbox" value="" id="yes2">
+                          <input class="form-check-input" type="checkbox" value="" id="yes2" onchange="handleChange2(this)">
                           <label class="form-check-label" for="yes2">
                             Yes
                           </label>
                         </div>
                       </td>
-                      <td id="status2">No Run</td>
+                      <td ><input type="text" class="form-control   mb-2 " id="status2" value="No Run" readonly="readonly" ></td>
                     </tr>
                     <tr>
                       <td>TS2</td>
-                      <td><input type="text" class="form-control border-primary mb-2 " id="summary3" value=""></td>
+                      <td><input type="text" class="form-control border-primary mb-2 " id="summary2" value=""></td>
                       <td><input type="text" class="form-control border-primary mb-2 " id="script3" value=""></td>
                       <td><input type="text" class="form-control border-primary mb-2 " id="eo3" value=""></td>
                       <td><input type="text" class="form-control border-primary mb-2 " id="ao3"></td>
                       <td>
                         <div class="form-check">
-                          <input class="form-check-input" type="checkbox" value="" id="yes3">
+                          <input class="form-check-input" type="checkbox" value="" id="yes3" onchange="handleChange3(this)">
                           <label class="form-check-label" for="yes3">
                             Yes
                           </label>
                         </div>
                       </td>
-                      <td id="status3">No Run</td>
+                      <td ><input type="text" class="form-control  mb-2 " id="status3" value="No Run" readonly="readonly" ></td>
                     </tr>
                     <tr>
                       <td>TS3</td>
-                      <td><input type="text" class="form-control border-primary mb-2 " id="summary4" value=""></td>
+                      <td><input type="text" class="form-control border-primary mb-2 " id="summary3" value=""></td>
                       <td><input type="text" class="form-control border-primary mb-2 " id="script4" value=""></td>
                       <td><input type="text" class="form-control border-primary mb-2 " id="eo4" value=""></td>
                       <td><input type="text" class="form-control border-primary mb-2 " id="ao4"></td>
                       <td>
                         <div class="form-check">
-                          <input class="form-check-input" type="checkbox" value="" id="yes4">
+                          <input class="form-check-input" type="checkbox" value="" id="yes4" onchange="handleChange4(this)">
                           <label class="form-check-label" for="yes4">
                             Yes
                           </label>
                         </div>
                       </td>
-                      <td id="status4">No Run</td>
+                      <td ><input type="text" class="form-control  mb-2 " id="status4" value="No Run" readonly="readonly" ></td>
                     </tr>
                     <tr>
                       <td>TS4</td>
-                      <td><input type="text" class="form-control border-primary mb-2 " id="summary5" value=""></td>
+                      <td><input type="text" class="form-control border-primary mb-2 " id="summary4" value=""></td>
                       <td><input type="text" class="form-control border-primary mb-2 " id="script5" value=""></td>
                       <td><input type="text" class="form-control border-primary mb-2 " id="eo5" value=""></td>
                       <td><input type="text" class="form-control border-primary mb-2 " id="ao5"></td>
                       <td>
                         <div class="form-check">
-                          <input class="form-check-input" type="checkbox" value="" id="yes5">
+                          <input class="form-check-input" type="checkbox" value="" id="yes5"  onchange="handleChange5(this)">
                           <label class="form-check-label" for="yes5">
                             Yes
                           </label>
                         </div>
                       </td>
-                      <td id="status5">No Run</td>
+                      <td ><input type="text" class="form-control  mb-2 " id="status5" value="No Run" readonly="readonly" ></td>
                     </tr>
                   </tbody>
                 </table>
@@ -809,9 +809,9 @@ Author: Prakriti Dhang
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="./js/main.js"></script>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.js"></script>
+  <!--script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.4.1/backbone.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jointjs/3.6.5/joint.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jointjs/3.6.5/joint.js"></script-->
 </body>
 
 </html>
