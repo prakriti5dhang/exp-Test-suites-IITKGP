@@ -357,7 +357,7 @@ function exbtex1() {
       let result = scriptb.replace(/[^0-9]/g, " ");
       var format = /[-]/;
       if( scriptb.match(format) ){
-        
+        document.getElementById("eo2").value = "-1";
         document.getElementById("ao2").value = "-1";
       }else{
       //alert(result);
@@ -424,7 +424,7 @@ function exbtex1() {
       
       var format = /[-]/;
       if( scriptb.match(format) ){
-        
+        document.getElementById("eo2").value = "-1";
         document.getElementById("ao2").value = "-1";
       }else{
         var ao2 = result * result;
@@ -482,7 +482,7 @@ function exbtex1() {
       //alert(scriptc);
       var format = /[-]/;
       if( scriptc.match(format) ){
-        
+        document.getElementById("eo3").value = "-1";
         document.getElementById("ao3").value = "-1";
       }else{
       let result3 = scriptc.replace(/[^0-9]/g, " ");
@@ -543,7 +543,7 @@ function exbtex1() {
       //alert(scriptc);
       var format = /[-]/;
       if( scriptc.match(format) ){
-        
+        document.getElementById("eo3").value = "-1";
         document.getElementById("ao3").value = "-1";
       }else{
       let result3 = scriptc.replace(/[^0-9]/g, " ");
@@ -605,7 +605,7 @@ function exbtex1() {
       let result4 = scriptd.replace(/[^0-9]/g, " ");
       var format = /[-]/;
       if( scriptd.match(format) ){
-        
+        document.getElementById("eo4").value = "-1";
         document.getElementById("ao4").value = "-1";
       }else{
       //result3.split(" ");
@@ -663,7 +663,7 @@ function exbtex1() {
       let result4 = scriptd.replace(/[^0-9]/g, " ");
       var format = /[-]/;
       if( scriptd.match(format) ){
-        
+        document.getElementById("eo4").value = "-1";
         document.getElementById("ao4").value = "-1";
       }else{
       //result3.split(" ");
@@ -723,7 +723,7 @@ function exbtex1() {
       //alert(scripte);
       var format = /[-]/;
       if( scripte.match(format) ){
-        
+        document.getElementById("eo5").value = "-1";
         document.getElementById("ao5").value = "-1";
       }else{
       let result5 = scripte.replace(/[^0-9]/g, " ");
@@ -781,7 +781,7 @@ function exbtex1() {
     else {
       var format = /[-]/;
       if( scripte.match(format) ){
-        
+        document.getElementById("eo5").value = "-1";
         document.getElementById("ao5").value = "-1";
       }else{
       let result5 = scripte.replace(/[^0-9]/g, " ");
