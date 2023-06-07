@@ -40,7 +40,7 @@ function viewsolutionb() { //submit button
   document.getElementById("viewsol").disabled = false;
   document.getElementById("dispviewbtn").disabled = true;
 
-  window.scrollBy(0, 1800);
+  window.scrollBy(0, 3800);
 
 
 }
@@ -355,6 +355,11 @@ function exbtex1() {
 
     else {
       let result = scriptb.replace(/[^0-9]/g, " ");
+      var format = /[-]/;
+      if( scriptb.match(format) ){
+        
+        document.getElementById("ao2").value = "-1";
+      }else{
       //alert(result);
       //var arrresult=[];
       //arrresult.push(result);
@@ -362,7 +367,9 @@ function exbtex1() {
 
       var ao2 = result * result;
       document.getElementById("ao2").value = ao2;
-    }
+
+      }
+    
     //alert(ao2);
 
     if ((eo2 == "") && (ao2 == "")) {
@@ -402,6 +409,7 @@ function exbtex1() {
 
     }
   }
+}
   else {
 
     /********************************************************** Script 2 (Square)*********************************************************/
@@ -413,14 +421,15 @@ function exbtex1() {
     }
     else {
       let result = scriptb.replace(/[^0-9]/g, " ");
-      //alert(result);
-      //var arrresult=[];
-      //arrresult.push(result);
-      //console.log(arrresult);
-
-      var ao2 = result * result;
-      document.getElementById("ao2").value = ao2;
-
+      
+      var format = /[-]/;
+      if( scriptb.match(format) ){
+        
+        document.getElementById("ao2").value = "-1";
+      }else{
+        var ao2 = result * result;
+        document.getElementById("ao2").value = ao2;
+      }
       //alert(ao2);
       if ((eo2 == "") && (ao2 == "")) {
 
@@ -471,12 +480,18 @@ function exbtex1() {
     }
     else {
       //alert(scriptc);
+      var format = /[-]/;
+      if( scriptc.match(format) ){
+        
+        document.getElementById("ao3").value = "-1";
+      }else{
       let result3 = scriptc.replace(/[^0-9]/g, " ");
       var resultrect = result3.replace(/^\s+|\s+$/gm, '');
       var stringArray = resultrect.split(" "); ///(\s+)/
 
       var ao3 = stringArray[0] * stringArray[1];
       document.getElementById("ao3").value = ao3;
+      }
       //alert(ao2);
       var statusc;
       if ((eo3 == "") && (ao3 == "")) {
@@ -526,6 +541,11 @@ function exbtex1() {
     }
     else {
       //alert(scriptc);
+      var format = /[-]/;
+      if( scriptc.match(format) ){
+        
+        document.getElementById("ao3").value = "-1";
+      }else{
       let result3 = scriptc.replace(/[^0-9]/g, " ");
       var resultrect = result3.replace(/^\s+|\s+$/gm, '');
       var stringArray = resultrect.split(" "); ///(\s+)/
@@ -533,7 +553,7 @@ function exbtex1() {
       var ao3 = stringArray[0] * stringArray[1];
       document.getElementById("ao3").value = ao3;
 
-
+      }
 
       if ((eo3 == "") && (ao3 == "")) {
 
@@ -583,11 +603,17 @@ function exbtex1() {
     else {
       //alert(scriptd);
       let result4 = scriptd.replace(/[^0-9]/g, " ");
+      var format = /[-]/;
+      if( scriptd.match(format) ){
+        
+        document.getElementById("ao4").value = "-1";
+      }else{
       //result3.split(" ");
       //alert(result4);
 
       var ao4 = Math.round(Math.PI * result4 * result4);
       document.getElementById("ao4").value = ao4;
+      }
       if ((eo4 == "") && (ao4 == "")) {
 
         document.getElementById("status4").value = "No Run"
@@ -635,11 +661,17 @@ function exbtex1() {
     }
     else {
       let result4 = scriptd.replace(/[^0-9]/g, " ");
+      var format = /[-]/;
+      if( scriptd.match(format) ){
+        
+        document.getElementById("ao4").value = "-1";
+      }else{
       //result3.split(" ");
       //alert(result4);
 
       var ao4 = Math.round(Math.PI * result4 * result4);
       document.getElementById("ao4").value = ao4;
+      }
       if ((eo4 == "") && (ao4 == "")) {
 
         document.getElementById("status4").value = "No Run"
@@ -689,15 +721,19 @@ function exbtex1() {
     }
     else {
       //alert(scripte);
+      var format = /[-]/;
+      if( scripte.match(format) ){
+        
+        document.getElementById("ao5").value = "-1";
+      }else{
       let result5 = scripte.replace(/[^0-9]/g, " ");
       var resultrtri = result5.replace(/^\s+|\s+$/gm, '');
       var stringArray5 = resultrtri.split(" ");
       //result3.split(" ");
       //alert(result5);
-
-
       var ao5 = (0.5 * stringArray5[0] * stringArray5[1]).toFixed(1);
       document.getElementById("ao5").value = ao5;
+      }
       if ((eo5 == "") && (ao5 == "")) {
 
         document.getElementById("status5").value = "No Run"
@@ -743,6 +779,11 @@ function exbtex1() {
 
     }
     else {
+      var format = /[-]/;
+      if( scripte.match(format) ){
+        
+        document.getElementById("ao5").value = "-1";
+      }else{
       let result5 = scripte.replace(/[^0-9]/g, " ");
       var resultrtri = result5.replace(/^\s+|\s+$/gm, '');
       var stringArray5 = resultrtri.split(" ");
@@ -752,6 +793,7 @@ function exbtex1() {
 
       var ao5 = (0.5 * stringArray5[0] * stringArray5[1]).toFixed(1);
       document.getElementById("ao5").value = ao5;
+      }
       if ((eo5 == "") && (ao5 == "")) {
 
         document.getElementById("status5").value = "No Run"
